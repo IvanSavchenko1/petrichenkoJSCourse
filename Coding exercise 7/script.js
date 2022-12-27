@@ -37,14 +37,14 @@ console.log(calculateVolumeAndArea(5))
 // задача 2 моя
 
 function getCoupeNumberMy(place) {
-  let coupeNumber
+  //let coupeNumber
   if (typeof (place) !== 'number' || place < 0 || !Number.isInteger(place)) {
     return "Ошибка. Проверьте правильность введенного номера места";
   } else if (place === 0 || place > 36) {
     return "Таких мест в вагоне не существует"
   } else {
     //return coupeNumber = Math.floor(place / 4) + 1
-    return coupeNumber = Math.ceil(place/4)
+    return Math.ceil(place/4)
   }
 }
 
