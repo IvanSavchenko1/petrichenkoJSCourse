@@ -1,5 +1,6 @@
 //https://github.com/yankovalenko94/JS_task_answers/blob/master/Tests/1_objects/objects_1.js
 
+
 const personalPlanPeter = {
   name: "Peter",
   age: "29",
@@ -10,9 +11,18 @@ const personalPlanPeter = {
       php: '10%'
     },
     exp: '1 month'
+  },
+  showAgeAndLangs: function (plan) {
+    let age = plan.age;
+    let str = `Мне ${age} и я владею языками: `;
+
+    plan.skills.languages.forEach(function(lang) {
+      str += `${lang.toUpperCase()} `;
+    });
+    return str;
   }
 }
-
+console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter))
 
 //personalPlanPeter.showAgeAndLangs(personalPlanPeter);
 
