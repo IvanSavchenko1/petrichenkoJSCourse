@@ -37,11 +37,19 @@
 // console.log(products.join(';'))
 
 
-const arr = [1, 21, 13, 23, 5, 19];
-arr.sort(compareNum);
-console.log(arr)
+// const arr = [1, 21, 13, 23, 5, 19];
+// arr.sort(compareNum);
+// console.log(arr)
+//
+// // внутри метода сорт есть алгоритм, в уроке ссылка на док о нем
+// function compareNum (a,b) {
+//   return a - b
+// }
 
-// внутри метода сорт есть алгоритм, в уроке ссылка на док о нем
-function compareNum (a,b) {
-  return a - b
-}
+// work case - надо узнать есть ли елемент в массиве?
+const array1 = [1, 2, 3];
+
+console.log(array1.includes(2));
+// Expected output: true
+console.log([1, 2, 3].includes(2))
+
