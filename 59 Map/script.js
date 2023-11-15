@@ -17,7 +17,7 @@ const map = new Map([
 // map.set(shops[1], 15000)
 //    .set(shops[2], 2200)
 
-// console.log(map)
+//console.log(map)
 
 // или делаем в цикле
 const budget = [ 10000, 20000, 30000];
@@ -27,9 +27,13 @@ shops.forEach((shop, i) => {
 console.log(map)
 
 console.log(map.get(shops[0]));
-
+console.log(map.size);
+//        map - массив с массивами!
+// перебираем мапы
 //map.keys()
 
+
+// ниже при помощи перебора мы получаем ключи - магазины с типом товара
 // for (let shop of map.keys()) {
 //   console.log(shop)
 // }
@@ -45,6 +49,22 @@ for (let price of map.values()) {
   console.log(price);
 }
 
-// for (let price of map.entries()) { // тут хз
-//   console.log(map);
-// }
+for (let price of map.entries()) { // тут хз
+  console.log(map);
+};
+
+for (let [shop, price] of map.entries()) {
+  console.log(price, shop)
+}
+
+map.forEach((value, key, map) => {
+  console.log(key, value)
+})
+
+/*
+1. У карт ключи могут быть чем угодно. у обьктов - только строки
+2. порядо у карт в зависимости от добавления, четкий порядок
+3. при создании пустой карты - там ничего нет
+4. карты просто перебирать
+
+ */
